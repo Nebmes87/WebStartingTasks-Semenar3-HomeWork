@@ -1,0 +1,108 @@
+<!-- Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.
+По имени пользователя придумать рассказ(жанр любой). Минимум 100 символов. -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        h1 {
+            color: rgb(38, 30, 107);
+        }
+        p {
+            color: rgb(169, 228, 183);
+        }
+    </style>
+    <title>Мой первый веб-сайт</title>
+</head>
+<body>
+    <p>Домашнее задание к семинару №3</p>
+    <h1>ЗОДИАКАЛЬНЫЙ ГОРОСКОП</h1>
+    <script language="JavaScript">
+        function funcName() {
+            let name = prompt("Как Вас зовут?", "Введите имя");
+            alert(`Привет, ${name}`);
+            let znak = prompt("Как Вас зовут?", "Введите имя");
+            if (znak == "Овен"){
+                const x = document.createElement('div')
+                x.textContent = "Есть все основания полагать, что день окажется удачным в области финансов. Ваши шансы на то, чтобы увеличить личное благосостояние, весьма велики. Но все же не забывайте об осторожности."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Телец"){
+                const x = document.createElement('div')
+                x.textContent = "Сегодня вы будете подобны скитающемуся рыцарю, вызывающему волнение везде, где он появляется. С вашей силой может конкурировать лишь Купидон. Так действуйте сообща с ним."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Близнецы"){
+                const x = document.createElement('div')
+                x.textContent = "Сегодня вам не стоит особенно прислушиваться к тому, что будут говорить за вашей спиной. Бог с ними, с завистниками. Нынче вам вообще никто не указ, делайте, что хотите, ничего катастрофического вам натворить не удастся."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Рак"){
+                const x = document.createElement('div')
+                x.textContent = "Вам не нужно каким бы то ни было образом объяснять свое поведение, однако если вы его перемените, никто на вас не обидится."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Лев"){
+                const x = document.createElement('div')
+                x.textContent = "Нет ничего более постоянного, чем временное. А то, что вы спланируете на небольшой срок сегодня - вообще простоит века. Так что стоит посерьезнее отнестись к планированию."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Дева"){
+                const x = document.createElement('div')
+                x.textContent = "У вас богатое воображение, воспользуйтесь же им, чтобы раскрасить мир вокруг вас. Если обои в гостиной вам не даст разрисовать жена/муж/бабушка/теща/и т.д., придумайте что-нибудь более безобидное."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Весы"){
+                const x = document.createElement('div')
+                x.textContent = "Сегодня вам наверняка потребуется приложить немалые умственные усилия к решению какой-то проблемы. Возможно, придется пойти на мозговой штурм. Съешьте с утра шоколадку - способствует."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Скорпион"){
+                const x = document.createElement('div')
+                x.textContent = "Позаботьтесь о парусах и руле, ветер же будет обеспечен высшими силами. Все, за что вы осмелитесь взяться сегодня, обязательно увенчается успехом."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Стрелец"){
+                const x = document.createElement('div')
+                x.textContent = "Вы склонны считать неразрешимой проблему, которая таковой вовсе не является. Не стоит отравлять себе жизнь пустыми переживаниями, а то как бы судьба не подбросила вам реальный повод для расстройства."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Козерог"){
+                const x = document.createElement('div')
+                x.textContent = "Сегодняшний день будет легок и приятен. Рекомендуемые занятия - прогулки, вечеринки, и прочая и прочая. Ответственных решений лучше не принимать, хотя они вряд ли и понадобятся."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Водолей"){
+                const x = document.createElement('div')
+                x.textContent = "Чтобы ни творилось сегодня в вашей душе, лицо должно оставаться столь же бесстрастным, как у игрока в покер. Окружающим совершенно не обязательно знать подробности вашей личной жизни"
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            if (znak == "Рыбы"){
+                const x = document.createElement('div')
+                x.textContent = "Строгий, сугубо научный подход к существу проблемы и интуитивные решения должны идти сегодня рука об руку. Не забивайте голову формализованными схемами, они помогают лишь тогда, когда не работает чутье."
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+            else{
+                const x = document.createElement('div')
+                x.textContent = "Нет такого знака зодиака"
+                const body = document.querySelector('body')
+                body.append(x)
+            }
+        }
+
+        funcName();
+    </script>
+</body>
+</html>
